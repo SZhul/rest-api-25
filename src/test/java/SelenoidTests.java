@@ -93,7 +93,7 @@ opera: {
                 .body("browsers.chrome", hasKey("127.0"));
     }
 
-
+    @DisplayName("Отправляем запрос на другой адрес с авторизацией")
     @Test
     void checkWdHubStatusTest() {
         given()
@@ -107,6 +107,7 @@ opera: {
                 .body("value.ready", is(true));
     }
 
+    @DisplayName("Отправляем запрос на другой адрес с авторизацией")
     @Test
     void checkWdHubStatusWithAuthTest() {
         given()
