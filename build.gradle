@@ -1,0 +1,23 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+}
+
+def slf4jVersion = "2.0.6"
+
+dependencies {
+    testImplementation(
+            "com.codeborne:selenide:6.19.1",
+            "org.junit.jupiter:junit-jupiter:5.9.3",
+            "org.slf4j:slf4j-simple:2.0.6",
+            "org.assertj:assertj-core:3.24.2",
+            "io.rest-assured:rest-assured:5.5.5"
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
